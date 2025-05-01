@@ -18,23 +18,12 @@ const AboutPage: React.FC = () => {
           </div>
           
           <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800 max-w-4xl mx-auto">
-            <div className="prose prose-invert max-w-none">
-              <p>
-                Founded in 2023, Ordi emerged from a simple yet powerful insight: businesses were spending countless hours and resources on phone calls that could be handled more efficiently with the right technology.
-              </p>
-              
-              <p>
-                Our team of AI researchers, linguists, and customer experience experts came together to create a solution that wouldn't just automate calls but would enhance the entire communication experience for both businesses and their customers.
-              </p>
-              
-              <p>
-                Unlike other voice AI systems that feel robotic and impersonal, Ordi is designed to create natural, flowing conversations that respect the nuances of human communication. We've developed proprietary technology that understands context, detects emotion, and responds appropriately in real-time.
-              </p>
-              
-              <p>
-                Today, Ordi handles thousands of calls daily for businesses across industries, from healthcare and financial services to retail and hospitality. We're constantly learning, improving, and pushing the boundaries of what's possible in AI-driven communication.
-              </p>
-            </div>
+          <div className="prose prose-invert max-w-none">
+  <p>
+    Ordi is a startup building AI agents that handle customer service through phone calls, text messages, and online chats. Designed to sound natural and solve real problems, our AI can answer questions, guide users through processes, make proactive calls, and personalize every interaction based on customer history. With Ordi, businesses can offer 24/7 support, reduce costs, and deliver faster, more satisfying experiences, all while keeping the option to transfer to human agents when needed. We’re redefining the future of customer conversations with intelligent, human-like AI.
+  </p>
+</div>
+
           </div>
         </div>
       </section>
