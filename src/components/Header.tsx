@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X, Layers } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 interface HeaderProps {
   scrolled: boolean;
@@ -16,17 +16,19 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-[#0a192f]/90 backdrop-blur-md py-3 shadow-lg' : 'bg-transparent py-5'
+        scrolled ? 'bg-[#0a192f]/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
+           
           <NavLink to="/" className="flex items-center gap-2 group">
-            <Layers className="w-8 h-8 text-purple-500 group-hover:text-purple-400 transition-colors" />
-            <span className="text-xl md:text-2xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
-              Ordi
-            </span>
-          </NavLink>
+  <img
+    src="./logo.png"  
+    alt="Logo"
+    className="h-5 md:h-20  w-auto max-w-24 object-contain" // 56px, 80px, 96px
+  />
+</NavLink>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
